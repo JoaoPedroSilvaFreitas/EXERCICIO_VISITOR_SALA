@@ -18,18 +18,18 @@ public class PessoaVisitorJson implements Visitor {
     @Override
     public String exibirProfessor(Professor professor) {
         return "Professor{" +
-                "\"matricula\"=" + professor.getMatricula() + "\"" +
-                ",\"nome\"='" + professor.getNome() + "\"" +
-                ",\"titulacao\"='" + professor.getTitulacao() + "\"" +
+                "\"matricula\"=\"" + professor.getMatricula() + "\"" +
+                ",\"nome\"=\"" + professor.getNome() + "\"" +
+                ",\"titulacao\"=\"" + professor.getTitulacao() + "\"" +
                 '}';
     }
 
     @Override
     public String exibirFuncionario(Funcionario funcionario) {
         return "Funcionario{" +
-                "\"codigo\"=" + funcionario.getCodigo() + "\"" +
-                ",\"nome\"='" + funcionario.getNome() + "\"" +
-                ",\"salario\"=" + funcionario.getSalario() + "\"" +
+                "\"codigo\"=\"" + funcionario.getCodigo() + "\"" +
+                ",\"nome\"=\"" + funcionario.getNome() + "\"" +
+                ",\"salario\"=\"" + funcionario.getSalario() + "\"" +
                 '}';
     }
 }
